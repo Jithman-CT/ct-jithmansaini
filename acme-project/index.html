@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Acme Web Design | Home</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="my-container">
+        <h1><span>Acme</span> Web Design</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="banner-section">
+        <div class="my-container">
+          <h1 class="title">Affordable Professional Websites</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero,
+            nihil labore ea debitis aut quidem. Error alias rem sunt, id dolores
+            nihil repellat sint, dolor quod consequatur tempora distinctio.
+          </p>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="my-container">
+          <div class="content">
+            <h2>Subscribe To Our Newsletter</h2>
+          </div>
+          <div class="form">
+            <form action="" autocomplete="off">
+              <input
+                type="email"
+                placeholder="Enter Email..."
+                id="email"
+                required
+              />
+              <button class="button" value="submit" onclick="myFun()">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-services">
+        <div class="my-container">
+          <div class="box">
+            <img src="./images/html5.png" alt="HTML 5 logo" />
+            <h3>HTML5 Markup</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis, dolorum. Ab ipsa dicta nisi officiis.
+            </p>
+          </div>
+          <div class="box">
+            <img src="./images/css3.png" alt="CSS 3 logo" />
+            <h3>HTML5 Markup</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis, dolorum. Ab ipsa dicta nisi officiis.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="./images/computer-brush.png"
+              alt="Computer with brush logo"
+            />
+            <h3>HTML5 Markup</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis, dolorum. Ab ipsa dicta nisi officiis.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p>Acme Web Design, Copyright &copy; 2022</p>
+    </footer>
+
+    <script>
+      function myFun() {
+        var email = document.querySelector("#email").value;
+        alert("Email :" + email);
+      }
+    </script>
+  </body>
+</html>
