@@ -27,6 +27,13 @@ body {
 input:focus {
   outline: none;
 }
+a {
+  text-decoration: none;
+}
+a:hover,
+button {
+  cursor: pointer;
+}
 /* header */
 header.main-header {
   background-color: #35424a;
@@ -42,6 +49,10 @@ header.main-header {
 }
 .main-header h1 span {
   color: #e8491d;
+}
+.main-header h1 a {
+  text-decoration: none;
+  color: unset;
 }
 .navbar ul {
   margin-top: 12px;
@@ -109,6 +120,7 @@ header.main-header {
 .our-services .box h3 {
   color: #000;
   font-weight: 700;
+  margin-top: 10px;
 }
 .our-services .box p {
   color: #000;
@@ -159,6 +171,9 @@ header.main-header {
 }
 .service-form div {
   margin-bottom: 10px;
+}
+form.service-form {
+  overflow: hidden;
 }
 /* footer */
 
