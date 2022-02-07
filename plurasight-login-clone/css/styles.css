@@ -170,6 +170,7 @@ section#right-container {
 }
 h1.showcase-text {
   font-size: 3rem;
+  text-align: center;
 }
 #showcase .secondary-btn {
   width: 60%;
@@ -221,7 +222,7 @@ div#showcase {
   }
   footer#main-footer {
     width: 80%;
-    margin: 0 auto;
+    margin: 1.5rem auto 0;
     text-align: center;
   }
   .brand-logo img {
