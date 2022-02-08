@@ -59,7 +59,6 @@ h2 {
 }
 /* global components */
 .my-container {
-  width: 100%;
   max-width: 1056px;
   margin: 0 auto;
   padding: 0 20px;
@@ -114,8 +113,9 @@ h2 {
 }
 .main-header {
   background: url("../images/home-banner.png");
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .header-flex {
   height: 9vh;
@@ -128,7 +128,6 @@ h2 {
   align-items: center;
 }
 .header-left-con img.brand-logo {
-  width: 100%;
   max-width: 90px;
   height: 20px;
   vertical-align: middle;
@@ -145,7 +144,7 @@ h2 {
   padding-right: 0.438rem;
   vertical-align: middle;
   display: inline-block;
-  width: 100%;
+
   max-width: 21px;
   height: 14px;
 }
@@ -165,7 +164,6 @@ h2 {
 .header-content {
   padding: 200px 0;
   max-width: 510px;
-  width: 100%;
 }
 .header-content h1 {
   font-size: 38px;
@@ -233,7 +231,7 @@ span.block {
 .sp-col-4 img {
   display: block;
   margin: 0 auto;
-  width: 100%;
+
   max-width: 56px;
   height: 65px;
   object-fit: contain;
@@ -257,7 +255,7 @@ span.block {
 }
 .icon-text-sec img {
   display: block;
-  width: 100%;
+
   max-width: 38px;
   height: 38px;
   object-fit: contain;
@@ -267,7 +265,6 @@ span.block {
   margin-bottom: 55px;
 }
 .fs-s3-container p {
-  width: 100%;
   max-width: 485px;
 }
 
@@ -341,7 +338,7 @@ p.testimonial-desc {
   font-size: 22px;
   color: #83a7a5;
   margin-bottom: 35px;
-  width: 100%;
+
   max-width: 462px;
 }
 p.testimonial-name {
@@ -353,7 +350,6 @@ p.testimonial-job-profile {
   color: #83a7a5;
 }
 .testimonial-image-container img {
-  width: 100%;
   max-width: 400px;
   height: 405px;
 }
@@ -372,7 +368,7 @@ p.testimonial-job-profile {
 .world-map-content p {
   font-size: 14px;
   margin-top: 22px;
-  width: 100%;
+
   max-width: 500px;
 }
 /* pricing section */
@@ -380,7 +376,6 @@ p.testimonial-job-profile {
   padding: 95px 0 75px;
 }
 #pricing-plan-section .fs-heading-section p {
-  width: 100%;
   max-width: 510px;
 }
 .pricing-plan-container {
@@ -461,7 +456,6 @@ p.testimonial-job-profile {
 
 /* need help section */
 .cirle-with-shades {
-  width: 100%;
   max-width: 44px;
   height: 44px;
   margin: 0 auto 10px;
@@ -480,6 +474,9 @@ p.testimonial-job-profile {
 /* download section */
 #download-section {
   background-image: url("../images/blur-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .download-container {
   padding: 75px 0;
@@ -605,7 +602,6 @@ input:focus {
   .header-content {
     padding: 185px 0;
     max-width: 510px;
-    width: 100%;
   }
   /* template-section */
   .handmobile-text-flex-container {
@@ -741,7 +737,6 @@ input:focus {
   /* footer-content */
 
   .footer-content .footer-col-4 {
-    width: 100%;
     padding: 15px 15px 15px 0;
   }
   .copyright-social-media-container {
