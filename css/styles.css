@@ -12,14 +12,14 @@ body {
 .my-container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 0 20px;
 }
 .content-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  flex-wrap: wrap;
 }
 a {
   text-decoration: none;
@@ -28,6 +28,7 @@ a {
   padding: 20px;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
+  margin: 15px;
 }
 a:hover {
   color: #fce77d;
