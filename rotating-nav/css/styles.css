@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #ccc;
+  /* overflow-x: hidden; */
+}
+.my-container {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  /* min-height: 100vh; */
+  padding: 50px;
+}
+.my-container.show-nav {
+  transform: rotate(-20deg);
+}
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+.circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+.my-container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background-color: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+.circle button:focus {
+  outline: none;
+}
+.circle button#open div {
+  width: 24px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+.circle button#open {
+  left: 60%;
+}
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+.my-container.show-nav + nav {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.4s linear;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+nav ul li {
+  margin: 40px 0;
+}
+nav ul li:nth-child(2) {
+  margin-left: 15px;
+}
+
+nav ul li:nth-child(3) {
+  margin-left: 30px;
+}
+nav ul li a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.content img {
+  max-width: 100%;
+  height: 500px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.content h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content small {
+  color: #555;
+  font-style: italic;
+}
+.content p {
+  color: #333;
+  line-height: 1.2;
+}
