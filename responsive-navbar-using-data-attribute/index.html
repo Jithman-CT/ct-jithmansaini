@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Creating Responsive Navbar" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+    <header class="primary-header flex">
+      <div>
+        <a href="#" class="logo">LOGO</a>
+      </div>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="primary-navigation flex"
+          data-visible="false"
+        >
+          <li class="active">
+            <a href="./index.html"> <span aria-hidden="true">00</span>Home </a>
+          </li>
+          <li>
+            <a href="#"> <span aria-hidden="true">01</span>Destination </a>
+          </li>
+          <li>
+            <a href="#"> <span aria-hidden="true">02</span>Crew </a>
+          </li>
+          <li>
+            <a href="#"> <span aria-hidden="true">03</span>Technologies </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
