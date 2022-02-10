@@ -119,3 +119,8 @@ nav ul li a {
   color: #333;
   line-height: 1.2;
 }
+@media (max-width: 500px) {
+  .content img {
+    height: unset;
+  }
+}
