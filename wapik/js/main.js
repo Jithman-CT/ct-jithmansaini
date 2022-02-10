@@ -1,5 +1,10 @@
 
-const navSlide = () =>{
+
+window.onload = function () {
+    new WOW().init();
+};
+
+const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".header-right-con nav ul");
     const navLinks = document.querySelectorAll(".header-right-con nav ul li");
@@ -8,15 +13,15 @@ const navSlide = () =>{
     const lineThree = document.querySelector(".class3")
     // toggle nav 
 
-    burger.addEventListener('click', ()=>{
+    burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         // animate links
-        navLinks.forEach((link,i) =>{
-            if(link.style.animation){
+        navLinks.forEach((link, i) => {
+            if (link.style.animation) {
                 link.style.animation = ""
             }
-            else{
-                link.style.animation = `navLinkFade 0.5s ease forwards ${i /7 + 0.5}s`;
+            else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${i / 7 + 0.5}s`;
 
             }
         });

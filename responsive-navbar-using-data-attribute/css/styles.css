@@ -11,7 +11,10 @@ body {
   background-size: cover;
   overflow-x: hidden;
 }
-
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
 .flex {
   display: flex;
   gap: 1rem;
@@ -48,14 +51,13 @@ body {
 }
 /* sr-only */
 .sr-only {
-  position: absolute;
-  width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   height: 1px;
-  padding: 0;
-  margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 .mobile-nav-toggle {
   display: none;

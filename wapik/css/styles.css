@@ -57,6 +57,7 @@ img {
 h2 {
   font-family: "Roboto-Light", Helvetica, sans-serif;
 }
+
 /* global components */
 .my-container {
   max-width: 1056px;
@@ -358,6 +359,7 @@ p.testimonial-job-profile {
   background-image: url("../images/world-bg-image.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .world-map-content {
   padding: 155px 0; /* 165px */

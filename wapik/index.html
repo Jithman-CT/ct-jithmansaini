@@ -10,6 +10,9 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css" />
+  <!-- animate css -->
+  <link rel="stylesheet" href="./css/animate.css" />
+
 
   <title>Document</title>
 </head>
@@ -47,8 +50,8 @@
         </div>
       </div>
       <div class="header-content">
-        <h1>Welcome to Wapik</h1>
-        <p>
+        <h1 class="animated fadeInDown">Welcome to Wapik</h1>
+        <p >
           Wapik is multipurpose template, with modern and smart design. Wapik
           is perfect template for you!
         </p>
@@ -71,7 +74,7 @@
         </div>
         <!-- service providing -->
         <div class="fs-sp-sec">
-          <div class="sp-col-4">
+          <div class="sp-col-4 wow animated fadeInLeft">
             <img src="./images/Vector-Smart-Object.png" alt="circle with dot" loading="lazy" />
             <h3 class="services-heading">Ionicons</h3>
             <p class="services-desc">
@@ -79,7 +82,7 @@
               auctor. Aenean eu leo quam. Pellentesque ornare sem.
             </p>
           </div>
-          <div class="sp-col-4">
+          <div class="sp-col-4 wow animated fadeInDown">
             <img src="./images/test-tube.png" alt="testtube" loading="lazy" />
             <h3 class="services-heading">Creative Design</h3>
             <p class="services-desc">
@@ -87,7 +90,7 @@
               magna, vel scelerisque nisl consectetur et.
             </p>
           </div>
-          <div class="sp-col-4">
+          <div class="sp-col-4 wow animated fadeInRight">
             <img src="./images/square-shape.png" alt="square shape box" loading="lazy" />
             <h3 class="services-heading">Photoshop and Sketch</h3>
             <p class="services-desc">
@@ -388,7 +391,12 @@
 
 
 
+  <!-- waypoint js -->
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <!-- main js -->
   <script src="./js/main.js"></script>
+  
 </body>
 
 </html>
