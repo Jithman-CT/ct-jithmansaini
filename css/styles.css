@@ -29,10 +29,19 @@ a {
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   margin: 15px;
+  text-align: center;
+  flex-grow: 1;
 }
 a:hover {
   color: #fce77d;
   background-color: #f96167;
   transition: 0.3s ease-in-out;
   opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  a {
+    width: 100%;
+    max-width: 300px;
+  }
 }
