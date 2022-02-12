@@ -514,7 +514,8 @@ p.testimonial-job-profile {
 }
 input[type="email"] {
   padding: 13px 16px;
-  width: 240px;
+  width: 100%;
+  max-width: 240px;
   color: #83a7a5;
   font-size: 13px;
   background-color: #eef1ec;
