@@ -1,0 +1,32 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader span {
+  width: 0;
+  aspect-ratio: 1;
+  background-color: blueviolet;
+  border-radius: 50%;
+  margin: 0 10px;
+  transform: translate3d(0);
+  transition: transform ease-in-out;
+  animation: bounce 0.6s infinite alternate;
+}
+.loader span:nth-child(2) {
+  background-color: brown;
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* animation */
+@keyframes bounce {
+  to {
+    width: 16px;
+    height: 16px;
+    transform: translate3d(0, -16px, 0);
+  }
+}

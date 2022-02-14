@@ -1,0 +1,19 @@
+.loader {
+  font-size: 40px;
+  color: palevioletred;
+}
+.loader::after {
+  content: "...";
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* dots animation */
+@keyframes dots {
+  to {
+    width: 40px;
+  }
+}
