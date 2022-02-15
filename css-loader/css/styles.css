@@ -39,3 +39,6 @@ body {
   display: inline-block;
   border-radius: 10px;
 }
+.main-content a:hover {
+  opacity: 0.9;
+}
