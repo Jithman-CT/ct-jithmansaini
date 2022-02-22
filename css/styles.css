@@ -8,7 +8,10 @@ body {
   line-height: 1.1;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+h1 {
+  text-align: center;
+  color: #85810f;
+}
 .my-container {
   width: 100%;
   max-width: 1200px;
